@@ -14,6 +14,8 @@ spaghetti(
   y_lab = "",
   title = "",
   alpha = 1,
+  color = "gray",
+  size = 1,
   ...
 )
 }

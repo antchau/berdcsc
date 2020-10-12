@@ -26,6 +26,8 @@ spaghetti <- function(df,
                       y_lab = "",
                       title = "",
                       alpha = 1,
+                      color = "gray",
+                      size = 1,
                       ...) {
 
 
@@ -39,6 +41,8 @@ spaghetti <- function(df,
                                             y = !!y_var,
                                             group = !!group_var)) +
     ggplot2::geom_line(alpha = alpha,
+                       color = color,
+                       size = size,
                        ...) +
     ggplot2::labs(x = x_lab,
                   y = y_lab,
