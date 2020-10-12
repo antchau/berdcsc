@@ -11,6 +11,8 @@
 #' @param y_lab Label for x-axis
 #' @param title Title of the plot
 #' @param alpha  Transparency of the background individual lines. 0 is invisible and 1 is normal.
+#' @param color Color of the line
+#' @param size Size thickness of the line.
 #' @param ... Additional arguments to aesthetic specification of ggplot
 #'
 #' @return ggplot plot object

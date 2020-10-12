@@ -38,6 +38,10 @@ spaghetti(
 
 \item{alpha}{Transparency of the background individual lines. 0 is invisible and 1 is normal.}
 
+\item{color}{Color of the line}
+
+\item{size}{Size thickness of the line.}
+
 \item{...}{Additional arguments to aesthetic specification of ggplot}
 }
 \value{
