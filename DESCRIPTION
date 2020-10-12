@@ -1,16 +1,20 @@
 Package: berdcsc
-Title: What the Package Does (One Line, Title Case)
+Title: Methods, tools, and applications for statistical consulting
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "BERD",
+           family = "CSC",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+           email = "chaua3@uci.edu")
+Description: berdcsc is a package with conventions and standards for statistical analysis and modeling, 
+  data visualization and reporting. This package is developed at the UC Irvine Institute for Clinical & 
+  Translational Science: Biostatistcs, Epideiemology & Research Design and the UC Irvine Center for
+  Statistical Consulting.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.0
+Imports: 
+    rlang,
+    ggplot2
