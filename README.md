@@ -9,7 +9,7 @@ Before you can install the package, please make sure you are connected
 You can install `berdcsc` like so:
 
 ```
-devtools::install_github(chaua3/berdcsc", host = "github.oit.uci.edu/api/v3/")
+devtools::install_github("antchau/berdcsc")
 ```
 
 ## Contributing
