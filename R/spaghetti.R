@@ -34,9 +34,11 @@ spaghetti <- function(df,
   y_var <- rlang::enquo(y_var)
 
 
-  p <- ggplot2::ggplot(data = df, ggplot2::aes(x = !!x_var,
-                                               y = !!y_var,
-                                               group = !!group_var)) +
+  p <-
+    ggplot2::ggplot(data = df, ggplot2::aes(x = !!x_var,
+                                            y = !!y_var,
+                                            group = !!group_var,
+                                            ...)) +
     ggplot2::geom_line(alpha = alpha,
               colour = "grey") +
     ggplot2::labs(x = x_lab,
