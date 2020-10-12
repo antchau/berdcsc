@@ -37,10 +37,9 @@ spaghetti <- function(df,
   p <-
     ggplot2::ggplot(data = df, ggplot2::aes(x = !!x_var,
                                             y = !!y_var,
-                                            group = !!group_var,
-                                            ...)) +
+                                            group = !!group_var)) +
     ggplot2::geom_line(alpha = alpha,
-              colour = "grey") +
+                       ...) +
     ggplot2::labs(x = x_lab,
                   y = y_lab,
                   title = title)
