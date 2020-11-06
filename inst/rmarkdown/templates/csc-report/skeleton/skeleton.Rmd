@@ -1,0 +1,30 @@
+---
+title: "Report Title"
+author: "Your Name"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document
+---
+
+<img src= "uci-csc-logo.png" width=347.5 height=46.5 style="position:absolute;top:30px;right:100px;"/>
+
+
+### Background
+
+### Methods
+
+### Results
+
+#### Table 1. 
+
+#### Figure 1.
+
+#### Table 2. 
+
+#### Figure 2. 
+
+
+
+
+UC Irvine, Department of Statistics, 
+[Center for Statistical Consulting](https://statconsulting.uci.edu/)]

@@ -1,0 +1,33 @@
+---
+title: "Report Title"
+author: "Your Name"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document
+---
+
+<img src= "uci-icts-logo.png" width=400 height=68 style="position:absolute;top:30px;right:100px;"/>
+
+
+### Background
+
+### Methods
+
+### Results
+
+#### Table 1. 
+
+#### Figure 1.
+
+#### Table 2. 
+
+#### Figure 2. 
+
+
+
+UC Irvine, Institute for Clinical and Translational Sciences, 
+[Biostatistics, Epidemiology and Research Design (BERD) Unit](https://icts.uci.edu/services/berd1.php)  
+UC Irvine, Department of Statistics, 
+[Center for Statistical Consulting](https://statconsulting.uci.edu/)]
+
+
