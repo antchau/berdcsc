@@ -12,9 +12,7 @@
 #' geom_hline(yintercept = 0, size = 1, colour="#333333") +
 #' theme_berdcsc()
 
-theme_berdcsc <- function(base_size = 20) {
-
-  font <- "Arial"
+theme_berdcsc <- function(base_size = 20, font = "sans") {
 
   # Color Palette from Official UCI Brand
   colors <- c("uci-blue" = "#0064A4",

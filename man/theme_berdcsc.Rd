@@ -4,7 +4,7 @@
 \alias{theme_berdcsc}
 \title{Add berdcsc theme to ggplot2 object}
 \usage{
-theme_berdcsc(base_size = 20)
+theme_berdcsc(base_size = 20, font = "sans")
 }
 \arguments{
 \item{base_size}{Maximum font size in the plot. Smaller font sizes are computed relative to the
