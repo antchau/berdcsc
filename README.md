@@ -43,3 +43,4 @@ Lastly, features in the templates cateogry provide custom R Markdown templates t
 | Stata Reporting Template        | Template | High     | Now - Nov 16, 2020 |
 | ggplot2 custom theming function | Code     | High     | Now - Nov 16, 2020 |
 | Custom table theming function   | Code     | High     | Now - Nov 16, 2020 |
+| Create color pallette for plots | Code     | High     | Now - Nov 16, 2020 |
