@@ -7,6 +7,8 @@
 #' @param ... Additional arguments passed to discrete_scale() or
 #'            scale_color_gradientn(), used respectively when discrete is TRUE or FALSE
 #'
+#' @export
+#'
 scale_color_palette <- function(palette_name = "main", reverse = FALSE, discrete = TRUE, n, ...) {
 
   palette <- interpolate_color(palette = palette_name, reverse = reverse, n = n)
@@ -17,7 +19,7 @@ scale_color_palette <- function(palette_name = "main", reverse = FALSE, discrete
                    palette = palette,
                    ...)
   } else {
-    scale_color_gradientn(colours = palette, ...)
+    ggplot2::scale_color_gradientn(colours = palette, ...)
   }
 }
 
@@ -30,6 +32,8 @@ scale_color_palette <- function(palette_name = "main", reverse = FALSE, discrete
 #' @param ... Additional arguments passed to discrete_scale() or
 #'            scale_fill_gradientn(), used respectively when discrete is TRUE or FALSE
 #'
+#' @export
+#'
 scale_fill_palette <- function(palette_name = "main", reverse = FALSE, discrete = TRUE, n = n, ...) {
 
   palette <- interpolate_color(palette = palette_name, reverse = reverse, n = n)
@@ -40,7 +44,7 @@ scale_fill_palette <- function(palette_name = "main", reverse = FALSE, discrete 
                    palette = pal,
                    ...)
   } else {
-    scale_fill_gradientn(colours = palette, ...)
+    ggplot2::scale_fill_gradientn(colours = palette, ...)
   }
 }
 
