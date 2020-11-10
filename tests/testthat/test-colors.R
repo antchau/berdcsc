@@ -7,15 +7,15 @@ test_that("get_hex_color returns a hex code given a UCI color", {
 })
 
 test_that("get_color_palette returns a color palette", {
-  expect_named(get_color_palette()[["main"]], c("uci-blue", "uci-gold", "dark-gray"))
-  expect_named(get_color_palette()[["light"]], c("light-blue", "light-yellow", "light-gray"))
-  expect_named(get_color_palette()[["dark"]], c("dark-blue", "orange", "dark-gray"))
+  expect_named(get_color_palette()[["main"]], c("uci-blue", "uci-gold"))
+  expect_named(get_color_palette()[["light"]], c("uci-gold", "light-gray", "orange"))
+  expect_named(get_color_palette()[["dark"]], c("uci-blue", "light-gray", "orange"))
 })
 
 
 test_that("interpolate_color returns the correct number of colors after interpolation", {
   expect_length(interpolate_color(n = 10), 10)
-  expect_length(interpolate_color(palette = "light", n = 3), 3)
+  expect_length(interpolate_color(palette_name = "light", n = 3), 3)
 })
 
 

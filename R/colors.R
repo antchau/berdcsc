@@ -61,9 +61,9 @@ get_color_palette <- function(...){
   palette <- c(...)
 
   berdcsc_palettes <- list(
-    main = get_hex_color("uci-blue", "uci-gold", "dark-gray"),
-    light = get_hex_color("light-blue", "light-yellow", "light-gray"),
-    dark = get_hex_color("dark-blue", "orange", "dark-gray")
+    main = get_hex_color("uci-blue", "uci-gold"),
+    light = get_hex_color("uci-gold", "light-gray", "orange"),
+    dark = get_hex_color("uci-blue", "light-gray", "orange") # i like it
   )
 
   if(is.null(palette)){
@@ -75,10 +75,9 @@ get_color_palette <- function(...){
 }
 
 
-
 #' Interpolate colors
 #'
-#' @param palette Character name of the color palette
+#' @param palette_name Character name of the color palette
 #' @param reverse Boolean indicating whether to reverse palette
 #' @param n Integer indicating the number of colors to return after interpolating the given colors in the palette
 #' @param ... Additional arguments to colorRampPalette()
@@ -88,13 +87,13 @@ get_color_palette <- function(...){
 #'
 #' @examples
 #' interpolate_color(get_color_palette())
-interpolate_color <- function(palette = "main", reverse = FALSE, n , ...){
+interpolate_color <- function(palette_name = "main", reverse = FALSE, n , ...){
 
   if(!hasArg(n)){
     stop("Please supply a value for n, the number of colors to return after interpolation")
   }
 
-  palette <- get_color_palette()[[palette]]
+  palette <- get_color_palette()[[palette_name]]
 
   if(reverse) {
     palette <- rev(palette)

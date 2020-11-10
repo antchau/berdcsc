@@ -4,10 +4,10 @@
 \alias{interpolate_color}
 \title{Interpolate colors}
 \usage{
-interpolate_color(palette = "main", reverse = FALSE, n, ...)
+interpolate_color(palette_name = "main", reverse = FALSE, n, ...)
 }
 \arguments{
-\item{palette}{Character name of the color palette}
+\item{palette_name}{Character name of the color palette}
 
 \item{reverse}{Boolean indicating whether to reverse palette}
 
