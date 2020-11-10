@@ -19,3 +19,5 @@ Imports:
     rlang,
     ggplot2,
     extrafont
+Suggests: 
+    testthat
