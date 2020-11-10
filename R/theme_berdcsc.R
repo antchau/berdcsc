@@ -52,7 +52,7 @@ theme_berdcsc <- function(base_size = 20, font = "sans") {
     legend.title = ggplot2::element_text(family = font,
                                          face = "bold",
                                          size = base_size * 0.7,
-                                         color = colors[["dark-blue"]]),
+                                         color = colors[["dark-gray"]]),
     legend.title.align = 0.5,
     legend.text = ggplot2::element_text(family = font,
                                         size = base_size * 0.6,
