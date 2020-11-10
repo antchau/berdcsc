@@ -7,7 +7,7 @@
 uci_colors()
 }
 \value{
-A named vector of UCI color names with corresponding hex code
+A named vector of UCI color names with corresponding hex codes
 }
 \description{
 Return UCI colors
