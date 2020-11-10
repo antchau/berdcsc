@@ -40,8 +40,8 @@ theme_berdcsc <- function(base_size = 20, font = "sans") {
                                           color = colors[["dark-gray"]]),
     plot.caption = ggplot2::element_text(family = font,
                                          size = base_size * 0.6,
-                                         margin = ggplot2::margin(t = base_size * 0.25,
-                                                                  b = base_size * 0.25),
+                                         margin = ggplot2::margin(t = base_size * 0.75,
+                                                                  b = base_size * 0.75),
                                          hjust = 1,
                                          color = colors[["dark-gray"]]),
 
