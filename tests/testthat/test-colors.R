@@ -14,13 +14,10 @@ test_that("get_color_palette returns a color palette", {
 
 
 test_that("interpolate_color returns the correct number of colors after interpolation", {
-  expect_length(interpolate_color(n = 10), 10)
-  expect_length(interpolate_color(palette_name = "light", n = 3), 3)
+  expect_length(interpolate_color()(10), 10)
+  expect_length(interpolate_color(palette_name = "light")(3), 3)
 })
 
 
-test_that("interpolate_color returns an error if n is not supplied", {
-  expect_error(interpolate_color(), "Please supply a value for n, the number of colors to return after interpolation")
-})
 
 

@@ -9,9 +9,9 @@
 #'
 #' @export
 #'
-scale_color_palette <- function(palette_name = "main", reverse = FALSE, discrete = TRUE, n, ...) {
+scale_color_palette <- function(palette_name = "main", reverse = FALSE, discrete = TRUE, n = 2, ...) {
 
-  palette <- interpolate_color(palette = palette_name, reverse = reverse, n = n)
+  palette <- interpolate_color(palette = palette_name, reverse = reverse)
 
   if (discrete) {
     discrete_scale("colour",
@@ -19,7 +19,7 @@ scale_color_palette <- function(palette_name = "main", reverse = FALSE, discrete
                    palette = palette,
                    ...)
   } else {
-    ggplot2::scale_color_gradientn(colours = palette, ...)
+    ggplot2::scale_color_gradientn(colours = palette(n), ...)
   }
 }
 
@@ -34,9 +34,9 @@ scale_color_palette <- function(palette_name = "main", reverse = FALSE, discrete
 #'
 #' @export
 #'
-scale_fill_palette <- function(palette_name = "main", reverse = FALSE, discrete = TRUE, n = n, ...) {
+scale_fill_palette <- function(palette_name = "main", reverse = FALSE, discrete = TRUE, n = 2, ...) {
 
-  palette <- interpolate_color(palette = palette_name, reverse = reverse, n = n)
+  palette <- interpolate_color(palette = palette_name, reverse = reverse)
 
   if (discrete) {
     discrete_scale("fill",
@@ -44,7 +44,7 @@ scale_fill_palette <- function(palette_name = "main", reverse = FALSE, discrete 
                    palette = pal,
                    ...)
   } else {
-    ggplot2::scale_fill_gradientn(colours = palette, ...)
+    ggplot2::scale_fill_gradientn(colours = palette(n), ...)
   }
 }
 
