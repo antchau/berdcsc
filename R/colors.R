@@ -79,7 +79,6 @@ get_color_palette <- function(...){
 #'
 #' @param palette_name Character name of the color palette
 #' @param reverse Boolean indicating whether to reverse palette
-#' @param n Integer indicating the number of colors to return after interpolating the given colors in the palette
 #' @param ... Additional arguments to colorRampPalette()
 #'
 #' @return A character vector of length n that contains colors interpolated from the palette
@@ -87,11 +86,11 @@ get_color_palette <- function(...){
 #'
 #' @examples
 #' interpolate_color(get_color_palette())
-interpolate_color <- function(palette_name = "main", reverse = FALSE, n , ...){
+interpolate_color <- function(palette_name = "main", reverse = FALSE,...){
 
-  if(!hasArg(n)){
-    stop("Please supply a value for n, the number of colors to return after interpolation")
-  }
+  # if(!hasArg(n)){
+  #   stop("Please supply a value for n, the number of colors to return after interpolation")
+  # }
 
   palette <- get_color_palette()[[palette_name]]
 
@@ -99,7 +98,7 @@ interpolate_color <- function(palette_name = "main", reverse = FALSE, n , ...){
     palette <- rev(palette)
   }
 
-  return(grDevices::colorRampPalette(palette, ...)(n))
+  return(grDevices::colorRampPalette(palette, ...))
 
 }
 
